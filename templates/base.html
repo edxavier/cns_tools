@@ -1,0 +1,46 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+  </head>
+ <body class="m4-cloak">
+        
+
+    
+    <div data-role="appbar" class="bg-darkCyan fg-white">
+        
+        <a href="#" class="app-bar-item d-block d-none-lg" id="paneToggle"><span class="mif-menu"></span></a>
+
+        <div class="app-bar-container ">
+            <a href="#" class="app-bar-item">
+                <span class="mif-cogs"></span>
+                &nbsp; Aircon
+            </a>
+            <a href="#" class="app-bar-item">
+                <span class="mif-cogs"></span>
+                &nbsp; Meteo
+            </a>
+            <a href="#" class="app-bar-item">
+                <span class="mif-cogs"></span>
+                &nbsp; Estadisticas
+            </a>
+        </div>
+    </div>
+    
+    <div class="container mt-14">
+        {% block content  %}
+
+        {% endblock content %}
+    </div>
+    
+
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+    <script>
+        m4q.global(); // $ - now is a m4q constructor
+        m4q.noConflict(); // $ - now is a jquery constructor
+    </script>
+  </body>
+</html>

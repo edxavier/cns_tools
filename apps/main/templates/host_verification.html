@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<div class="row">
+    <div class="cell d-flex flex-justify-center"  >
+        <div data-role="activity" data-type="atom" data-style="color" id="loading" style="display: none;"></div>
+    </div>
+</div>
+<div class="row  bd-cyan p-3">
+    <div class="cell"></div>
+    <div class="cell">
+        <h5 class="d-flex flex-justify-center">Mantto mensual</h5>
+        <a class="button primary rounded  shadowed d-flex flex-justify-center"
+         href="#" 
+         onclick="$('#loading').show()"
+         data-role="ripple"><span class="mif-enter pr-2"></span> Continuar</a>
+    </div>
+    <div class="cell"></div>
+
+</div>
+
+
+{% endblock  %}
